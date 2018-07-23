@@ -1,12 +1,12 @@
 
 package za.co.digitalplatoon.invoiceservices.invoice.data.jpa.domain;
 
-
-
 import javax.validation.constraints.*;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -14,7 +14,7 @@ import java.util.List;
 public class Invoice implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
+	private final static DateFormat		DATE_FORMAT=	new SimpleDateFormat("yyyy-MM-dd");
 	@Id
 	@GeneratedValue
 	private Long 			id;
@@ -53,9 +53,8 @@ public class Invoice implements Serializable {
 	public void setVatRate(Long vatRate) {
 		this.vatRate = vatRate;
 	}
-
-	public Date getInvoiceDate() {
-		return invoiceDate;
+	public String getInvoiceDate() {
+		return(DATE_FORMAT.format(invoiceDate));
 	}
 
 	public void setInvoiceDate(Date invoiceDate) {

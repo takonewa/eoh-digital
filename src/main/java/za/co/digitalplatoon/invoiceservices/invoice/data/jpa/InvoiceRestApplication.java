@@ -11,7 +11,7 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguratio
 @ComponentScan
 @EnableAutoConfiguration
 @Import(RepositoryRestMvcConfiguration.class)
-public class InvoiceRestApplication {
+public class InvoiceRestApplication{
 
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(InvoiceRestApplication.class, args);
