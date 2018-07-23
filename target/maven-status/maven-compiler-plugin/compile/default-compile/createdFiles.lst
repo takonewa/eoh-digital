@@ -1,0 +1,6 @@
+za/co/digitalplatoon/invoiceservices/invoice/data/jpa/domain/LineItem.class
+za/co/digitalplatoon/invoiceservices/invoice/data/jpa/InvoiceRestApplication.class
+za/co/digitalplatoon/invoiceservices/invoice/data/jpa/domain/Invoice.class
+za/co/digitalplatoon/invoiceservices/invoice/data/jpa/domain/Test.class
+za/co/digitalplatoon/invoiceservices/invoice/data/jpa/service/ValidationExceptionHandler.class
+za/co/digitalplatoon/invoiceservices/invoice/data/jpa/service/InvoiceRepository.class
